@@ -102,25 +102,25 @@ def caso_generico(a, b, Nx, Ny, c_in, c_sup, c_inf, c_izq, c_der, g_sup, g_inf, 
         if c_izq != 'solo':
             u_k[0, :] = c_izq                        #izq
         if c_izq == 'solo':
-            u_k[0, :] = u_k[:,-2] - g_izq*dx
+            u_k[0, :] = u_k[:,-2] + g_izq*dx
 
         #Derecho 
         if c_der != 'solo':
             u_k[-1,:] = c_der
         if c_der == 'solo':
-            u_k[-1,:] = u_k[-2, :] - g_der*dx 
+            u_k[-1,:] = u_k[-2, :] + g_der*dx 
 
         #Inferior
         if c_inf != 'solo':
             u_k[:, 0] = c_inf 
         if c_inf == 'solo':
-            u_k[:,0] = u_k[:,-2] - g_izq*dx
+            u_k[:,0] = u_k[:,-2] + g_izq*dx
 
         # Superior
         if c_sup != 'solo':
              u_k[:, -1] = c_sup 
         if c_sup == 'solo':
-            u_k[:,-1] = u_k[:,-2] - g_sup*dx
+            u_k[:,-1] = u_k[:,-2] + g_sup*dx
         
         
         # Loop en el espacio i = 1....n-1
@@ -142,25 +142,25 @@ def caso_generico(a, b, Nx, Ny, c_in, c_sup, c_inf, c_izq, c_der, g_sup, g_inf, 
         if c_izq != 'solo':
             u_k[0, :] = c_izq                        #izq
         if c_izq == 'solo':
-            u_k[0, :] = u_k[:,-2] - g_izq*dx
+            u_k[0, :] = u_k[:,-2] + g_izq*dx
 
         #Derecho 
         if c_der != 'solo':
             u_k[-1,:] = c_der
         if c_der == 'solo':
-            u_k[-1,:] = u_k[-2, :] - g_der*dx 
+            u_k[-1,:] = u_k[-2, :] + g_der*dx 
 
         #Inferior
         if c_inf != 'solo':
             u_k[:, 0] = c_inf 
         if c_inf == 'solo':
-            u_k[:,0] = u_k[:,-2] - g_izq*dx
+            u_k[:,0] = u_k[:,-2] + g_izq*dx
 
         # Superior
         if c_sup != 'solo':
              u_k[:, -1] = c_sup 
         if c_sup == 'solo':
-            u_k[:,-1] = u_k[:,-2] - g_sup*dx
+            u_k[:,-1] = u_k[:,-2] + g_sup*dx
         
         # Puntos para graficar evolución
         punto_1[k] = u_k[int(Nx/2),int(Ny/2)]
