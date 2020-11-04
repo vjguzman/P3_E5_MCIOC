@@ -10,8 +10,8 @@ Ny = 30                  # numero de intervalos en y
 
 # Condiciones de borde
 c_in = 5                 # T° inicial                 
-c_sup = 0				 # Borde superior
-c_inf = 0                # Borde inferior
+c_sup = 'solo'				 # Borde superior
+c_inf = 'solo'                # Borde inferior
 c_izq = 25               # Borde izquierdo
 c_der = 25			     # Borde derecho
 
@@ -23,7 +23,7 @@ g_der = 0                # Gradiente derecho
 
 caso = "caso_5"          # Nombre del caso
 
-p1, p2, p3, sup = caso_generico(a, b, Nx, Ny, c_in, c_sup, c_inf, c_izq, c_der, g_sup, g_inf, g_izq, g_der, caso)
+p1, p2, p3,sup = caso_generico(a, b, Nx, Ny, c_in, c_sup, c_inf, c_izq, c_der, g_sup, g_inf, g_izq, g_der, caso)
 
 # GIF
 fp_in = "caso_5/frame_*.png"

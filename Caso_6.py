@@ -10,10 +10,10 @@ Ny = 30                  # numero de intervalos en y
 
 # Condiciones de borde
 c_in = 30                # T° inicial                 
-c_sup = 0				 # Borde superior
-c_inf = 0                # Borde inferior
+c_sup = 'solo'			 # Borde superior
+c_inf = 'solo'           # Borde inferior
 c_izq = 10               # Borde izquierdo
-c_der = 0			     # Borde derecho
+c_der = 'solo'			 # Borde derecho
 
 # Gradientes
 g_sup = 0                # Gradiente superior
@@ -26,8 +26,8 @@ caso = "caso_6"          # Nombre del caso
 p1, p2, p3, sup = caso_generico(a, b, Nx, Ny, c_in, c_sup, c_inf, c_izq, c_der, g_sup, g_inf, g_izq, g_der, caso)
 
 # GIF
-fp_in = "caso_7/frame_*.png"
-fp_out = "caso_7.gif"
+fp_in = "caso_6/frame_*.png"
+fp_out = "caso_6.gif"
 gif(fp_in, fp_out)
 
 # Grafico Evolucion
