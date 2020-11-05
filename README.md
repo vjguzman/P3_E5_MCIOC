@@ -57,18 +57,56 @@ Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profe
 - Gif distribución de temperaturas.
 
 ## Caso 3
-- Parámetros
+- Parámetros y CB
+  - a = 1
+  - b = 1
+  - Nx = Ny = 30
+  - T° inicial = 10°
+  - CB borde superior = u_k[:, -1] = 0 = 0°
+  - CB borde izquierdo = u_k[0, :] = 20°
+  - CB borde inferior = u_k[:, 0] = 20°
+  - CB borde derecho = u_k[-1,:] = 20°
+
+<br>
+
 - Gif.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso3/caso3.gif)
+  
 - Gráfico evolución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso3/Grafico_Evolucion_caso3.png)
+  
+- Imagenes distribución de temperaturas.
+
+- Gif distribución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso3/Distribucion_T_caso3.gif)
+
+## Caso 4
+- Parámetros y CB
+  - a = 1
+  - b = 0.5
+  - Nx = 15
+  - Ny = 30
+  - T° inicial = 10°
+  - CB borde superior = u_k[:, -1] = 0° 
+  - CB borde izquierdo = u_k[0, :] = 20° 
+  - CB borde inferior = u_k[:, 0] = 20°
+  - CB borde derecho = Gradiente ==> 0 = u_k[-1,:] = u_k[-2,:] + 0*dx
+
+- Gif.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/caso4.gif)
+
+- Gráfico evolución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Grafico_Evolucion_caso4.png)
+  
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
 
-## Caso 4
-- Parámetros
-- Gif.
-- Gráfico evolución de temperaturas.
-- Imagenes distribución de temperaturas.
-- Gif distribución de temperaturas.
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Distribucion_T_caso4.gif)
 
 ## Caso 5
 
