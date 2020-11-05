@@ -27,7 +27,7 @@ x,y = coords(4,2)
 
 
 def imshowbien(u):
-    imshow(u.T[Nx::-1,:], cmap=cm.coolwarm)
+    imshow(u.T[Ny::-1,:], cmap=cm.coolwarm)
     cbar=colorbar(extend='both', cmap=cm.coolwarm)
     ticks = arange(0,35,5)
     ticks_Text=["{}".format(deg) for deg in ticks]
