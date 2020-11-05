@@ -104,6 +104,12 @@ Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profe
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Grafico_Evolucion_caso4.png)
   
 - Imagenes distribución de temperaturas.
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Imagenes%20Fijas/frame_0000.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Imagenes%20Fijas/frame_0004.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Imagenes%20Fijas/frame_0012.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Imagenes%20Fijas/frame_0024.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Imagenes%20Fijas/frame_0048.png)
+  
 - Gif distribución de temperaturas.
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso4/Distribucion_T_caso4.gif)
@@ -214,4 +220,5 @@ Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profe
 
 ## ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 
-Para cambiar el código en un caso 3D se debe agregar todo lo relacionado al eje z, como es el caso de Nz
+Para cambiar el código en un caso 3D se debe agregar todo lo relacionado al eje z, como es el caso de la variable Nz que tiene el numero de intervalos a considerar, la variable dz correspondiente a la discretizacion, una variable k para realizar el (dz*k) para las coordenadas (donde dx*i y dy*j). Además se pueden agregar otras variables auxiliares de u_km1 para mostrar la evolución de la temperatura dentro del hormigon tanto en los planos XY, YZ, ZX.
+Las condiciones de borde actualmente en el caso 2D son 4 variables pero para imponerlas en el caso 3D deben ser 6 variables donde se mantienen las 4 iniciales pero se deben agregar otras que consideren la profundidad.
