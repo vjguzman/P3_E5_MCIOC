@@ -23,28 +23,28 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 ## Caso 2
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 ## Caso 3
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 ## Caso 4
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 ## Caso 5
 
 - Parámetros y CB
@@ -80,17 +80,20 @@ Se puede notar que las condiciones de borde cambian si existe un gradiente defin
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/distribucion_temperatura_caso5.gif)
 
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+<br>
+
 ## Caso 6
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 ## Caso 7
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-
+- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
