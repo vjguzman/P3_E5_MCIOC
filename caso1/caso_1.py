@@ -27,27 +27,27 @@ x,y = coords(4,2)
 
 
 def imshowbien(u):
-	imshow(u.T[Nx::-1,:], cmap=cm.coolwarm)
-	cbar=colorbar(extend='both', cmap=cm.coolwarm)
-	ticks = arange(0,35,5)
-	ticks_Text=["{}".format(deg) for deg in ticks]
-	cbar.set_ticks(ticks)
-	cbar.set_ticklabels(ticks_Text)
-	clim(0,30)
+    imshow(u.T[Nx::-1,:], cmap=cm.coolwarm)
+    cbar=colorbar(extend='both', cmap=cm.coolwarm)
+    ticks = arange(0,35,5)
+    ticks_Text=["{}".format(deg) for deg in ticks]
+    cbar.set_ticks(ticks)
+    cbar.set_ticklabels(ticks_Text)
+    clim(0,30)
 
-	xlabel('b')
-	ylabel('a')
-	xTicks_N = arange(0,Nx+1,3)
-	yTicks_N = arange(0,Ny+1,3)
-	xTicks = [coords(i,0)[0] for i in xTicks_N]
-	yTicks = [coords(0,i)[1] for i in yTicks_N]
-	xTicks_Text=["{0:.2f}".format(tick) for tick in xTicks]
-	yTicks_Text=["{0:.2f}".format(tick) for tick in yTicks]
+    xlabel('b')
+    ylabel('a')
+    xTicks_N = arange(0,Nx+1,3)
+    yTicks_N = arange(0,Ny+1,3)
+    xTicks = [coords(i,0)[0] for i in xTicks_N]
+    yTicks = [coords(0,i)[1] for i in yTicks_N]
+    xTicks_Text=["{0:.2f}".format(tick) for tick in xTicks]
+    yTicks_Text=["{0:.2f}".format(tick) for tick in yTicks]
 
-	xticks(xTicks_N, xTicks_Text, rotation='vertical')
-	yticks(yTicks_N, yTicks_Text)
-	margins(0.2)
-	subplots_adjust(bottom=0.15)
+    xticks(xTicks_N, xTicks_Text, rotation='vertical')
+    yticks(yTicks_N, yTicks_Text)
+    margins(0.2)
+    subplots_adjust(bottom=0.15)
 
 
 u_k = zeros((Nx+1, Ny+1), dtype=double)
@@ -81,7 +81,6 @@ graf = np.int(Days/dt)
 punto_1 = np.zeros(graf)
 punto_2 = np.zeros(graf)
 punto_3 = np.zeros(graf)
-superficie = np.zeros(graf)
 
 def truncate(n, decimals=0):
     multiplier = 10**decimals
@@ -127,7 +126,6 @@ for k in range(int32(Days/dt)):
     punto_1[k] = u_k[int(Nx/2),int(Ny/2)]
     punto_2[k] = u_k[int(Nx/2),int(3*Ny/4)]
     punto_3[k] = u_k[int(3*Nx/4),int(3*Ny/4)]
-    superficie[k] = u_k[int(Nx/2),int(Ny/2)]
 
     #Grafico en d_next
     if t > next_t:
@@ -169,10 +167,11 @@ gif(fp_in, fp_out)
 # Grafico evolución de temperatura
 figure(2)
 t_evolucion = np.arange(0, int(Days/dt), 1)
+superficie = np.zeros(int(Days/dt))
 plot(t_evolucion, punto_1, label='N/4', color= 'orange')
 plot(t_evolucion, punto_2, label='2N/4', color= 'green')
 plot(t_evolucion, punto_3, label='3N/4', color= "red")
-plot(t_evolucion, superficie, label='superficie', color= "blue")
+plot(t_evolucion,superficie , label='superficie', color= "blue")
 legend(loc="upper right")
 title("Evolución de temperatura en puntos")
 savefig(f"caso1/Grafico_Evolucion_caso1.png")
