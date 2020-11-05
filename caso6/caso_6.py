@@ -130,7 +130,7 @@ for k in range(int32(Days/dt)):
     superficie[k] = u_k[int(Nx/2),-1]
 
     #Grafico en d_next
-    if t > next_t:
+    if t >= next_t:
         figure(1)
         imshowbien(u_k)
         title(titulo)
