@@ -7,16 +7,6 @@ Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profe
 - P2 (Nx/2),(Ny/2)
 - P3 (Nx/2),(3Ny/4)
 
-
-## POR HACER
-Descripción de como hay que cambiar las condiciones de borde, en el código.
-En un mismo gráfico la evolución de la temperatura en el tiempo en los puntos 
-En el caso 7 incluya, además, la temperatura ambiental en el mismo gŕafico como una linea negra punteada. 
-Imágenes fijas para la distribución de temperatura en los tiempos 0h, 2h, 6h, 12h, 24h y un gif animado con toda la evolución de temperatura. 
-Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
-
--> para imagenes  ![alt text](link) 
-
 ## Caso 1
 - Parámetros y CB
   - a = 1
@@ -41,7 +31,7 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 - Imagenes distribución de temperaturas.
 
 - Gif distribución de temperaturas.
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+
 ## Caso 2
 - Parámetros y CB
   - a = 1
@@ -65,21 +55,21 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
   
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+
 ## Caso 3
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+
 ## Caso 4
 - Parámetros
 - Gif.
 - Gráfico evolución de temperaturas.
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+
 ## Caso 5
 
 - Parámetros y CB
@@ -114,8 +104,6 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/distribucion_temperatura_caso5.gif)
 
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
-<br>
 
 ## Caso 6
 
@@ -151,8 +139,6 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Distribucion_T_caso6.gif)
 
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
-<br>
 
 ## Caso 7
 
@@ -188,5 +174,6 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Distribucion_T_caso7.gif)
 
-- ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
-<br>
+## ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+
+Para cambiar el código en un caso 3D se debe agregar todo lo relacionado al eje z, como es el caso de Nz
