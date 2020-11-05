@@ -123,9 +123,9 @@ for k in range(int32(Days/dt)):
     u_k[-1,:] = u_k[-2,:] + 0*dx        # der
 
     # Puntos para graficar evolución
-    punto_1[k] = u_k[int(Nx/2),int(Ny/2)]
-    punto_2[k] = u_k[int(Nx/2),int(3*Ny/4)]
-    punto_3[k] = u_k[int(3*Nx/4),int(3*Ny/4)]
+    punto_1[k] = u_k[int(Nx/2),int(Ny/4)]
+    punto_2[k] = u_k[int(Nx/2),int(Ny/2)]
+    punto_3[k] = u_k[int(Nx/2),int(3*Ny/4)]
 
     #Grafico en d_next
     if t >= next_t:
@@ -174,5 +174,5 @@ plot(t_evolucion, punto_3, label='3N/4', color= "red")
 plot(t_evolucion,superficie , label='superficie', color= "blue")
 legend(loc="upper right")
 title("Evolución de temperatura en puntos")
-savefig(f"caso4/Grafico_Evolucion_caso2.png")
+savefig(f"caso4/Grafico_Evolucion_caso4.png")
 show()
