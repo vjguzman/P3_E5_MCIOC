@@ -117,10 +117,10 @@ for k in range(int32(Days/dt)):
     u_k = u_km1
     
     # CB denuevo para asegurar cumplimiento
-    u_k[0, :] = 25                      #izq
-    u_k[:, 0] = u_k[:,-2] + 0*dx        #inf
-    u_k[:, -1] = u_k[:,-2] + 0*dx       #sup
-    u_k[-1,:] = 25                      # der
+    u_k[0, :] = 20                      #izq
+    u_k[:, 0] = 20                      #inf
+    u_k[:, -1] = 0                      #sup
+    u_k[-1,:] = 0                       #der
 
     # Puntos para graficar evolución
     punto_1[k] = u_k[int(Nx/2),int(Ny/2)]
