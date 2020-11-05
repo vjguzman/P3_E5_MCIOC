@@ -63,12 +63,11 @@ Se puede notar que las condiciones de borde cambian si existe un gradiente defin
 - Gif.
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/caso5.gif)
-<br>
 
 - Gráfico evolución de temperaturas.
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Grafico_Evolucion_caso5.png)
- <br>
+ 
 - Imagenes distribución de temperaturas.
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0000.png)
@@ -76,11 +75,11 @@ Se puede notar que las condiciones de borde cambian si existe un gradiente defin
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0012.png)
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0024.png)
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0048.png)
- <br>
+  
 - Gif distribución de temperaturas.
 
   ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/distribucion_temperatura_caso5.gif)
- <br>
+
 #### Caso 6
 - Parámetros
 - Gif.
