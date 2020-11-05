@@ -56,8 +56,7 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
   - CB borde izquierdo = 25° => u_k[0, :] = 25
   - CB borde inferior = Gradiente 0 => _k[:, 0] = u_k[:,1] - 0*dx
   - CB borde derecho = 25° => u_k[-1,:] = 25
-<br>
-Se puede notar que las condiciones de borde cambian si existe un gradiente definido, debido a que se le considera el gradiente (ya sea en x o en y) con respecto al punto siguiente del que se esta evaluando.
+
 <br>
 
 - Gif.
@@ -84,16 +83,75 @@ Se puede notar que las condiciones de borde cambian si existe un gradiente defin
 <br>
 
 ## Caso 6
-- Parámetros
+
+- Parámetros y CB
+  - a = 1
+  - b = 1
+  - Nx = Ny = 30
+  - T° inicial = 30°
+  - CB borde superior = Gradiente 0 => u_k[:, -1] = u_k[:,-2] - 0*dx
+  - CB borde izquierdo = 10° => u_k[0, :] = 10
+  - CB borde inferior = Gradiente 0 => _k[:, 0] = u_k[:,1] - 0*dx
+  - CB borde derecho = Gradiente 0 => u_k[-1,:] =  u_k[-2,:] - 0*dx
+
+<br>
+
 - Gif.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/caso6.gif)
+
 - Gráfico evolución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Grafico_Evolucion_caso6.png)
+ 
 - Imagenes distribución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Imagenes%20Fijas/frame_0000.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Imagenes%20Fijas/frame_0004.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Imagenes%20Fijas/frame_0012.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Imagenes%20Fijas/frame_0024.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Imagenes%20Fijas/frame_0048.png)
+  
 - Gif distribución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso6/Distribucion_T_caso6.gif)
+
 - ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+<br>
+
 ## Caso 7
-- Parámetros
+
+- Parámetros y CB
+  - a = 1
+  - b = 1
+  - Nx = Ny = 30
+  - T° inicial = 20°
+  - CB borde superior = Temperatura ambiental (sinusoide con variacion de 10°, periodo de 1 día) => u_k[:, -1] =  20. + 10*(np.sin((2*3.14/T)*t))
+  - CB borde izquierdo = Gradiente 0 => u_k[0, :] = u_k[0, :] = u_k[1,:] - 0*dx 
+  - CB borde inferior = Gradiente 0 => _k[:, 0] = u_k[:,1] - 0*dx
+  - CB borde derecho = Gradiente 0 => u_k[-1,:] =  u_k[-2,:] - 0*dx
+
+<br>
+
 - Gif.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/caso7.gif)
+
 - Gráfico evolución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Grafico_Evolucion_caso7.png)
+ 
 - Imagenes distribución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Imagenes%20Fijas/frame_0000.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Imagenes%20Fijas/frame_0004.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Imagenes%20Fijas/frame_0012.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Imagenes%20Fijas/frame_0024.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Imagenes%20Fijas/frame_0048.png)
+  
 - Gif distribución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso7/Distribucion_T_caso7.gif)
+
 - ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
+<br>
