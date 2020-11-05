@@ -98,7 +98,7 @@ for k in range(int32(Days/dt)):
     u_k[0, :] = 20                      #izq
     u_k[:, 0] = 20                      #inf
     u_k[:, -1] = 0                      #sup
-    u_k[-1,:] = u_k[:,-2] + 0*dx        # der
+    u_k[-1,:] = u_k[-2,:] + 0*dx        # der
 
     
     # Loop en el espadio i = 1....n-1
@@ -120,7 +120,7 @@ for k in range(int32(Days/dt)):
     u_k[0, :] = 20                      #izq
     u_k[:, 0] = 20                      #inf
     u_k[:, -1] = 0                      #sup
-    u_k[-1,:] = u_k[:,-2] + 0*dx        # der
+    u_k[-1,:] = u_k[-2,:] + 0*dx        # der
 
     # Puntos para graficar evolución
     punto_1[k] = u_k[int(Nx/2),int(Ny/2)]
