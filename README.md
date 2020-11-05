@@ -1,5 +1,11 @@
 # Proyecto 3 - Entrega 5 - MCIOC
 ## Replicar casos 2-D para verificar
+Esta entrega consistia en utilizar el codigo de la entrega anterior, el cual fue desarrollado en la ayudantia de la semana pasada, para recrear 7 casos con distintos CB y ver sus resultados. Para eso, se modificó el codigo para cada caso y se creó un codigo que transforme los frames en el gif correspondiente. Además se debio separar los frames 0, 2, 4, 12, 24 y 48 los que correspondian a los tiempos 0h, 2h, 6h, 12h, 24h para crear un gif animado con toda la evolución de temperatura.
+
+Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profesor para resolver dudas finales con respecto al gráfico de la evolución de temperatura en el tiempo de los puntos indicados en el enunciado pues nos daban diferente, con lo que llegamos a que los puntos a utilizar correspondian los que se presentan a continuación.
+- P1 (Nx/2),(Ny/4)
+- P2 (Nx/2),(Ny/2)
+- P3 (Nx/2),(3Ny/4)
 
 
 ## POR HACER
@@ -40,12 +46,41 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 - Gif distribución de temperaturas.
 
 #### Caso 5
-- Parámetros
+
+- Parámetros y CB
+  - a = 1
+  - b = 1
+  - Nx = Ny = 30
+  - T° inicial = 5°
+  - CB borde superior = Gradiente 0 => u_k[:, -1] = u_k[:,-2] - 0*dx
+  - CB borde izquierdo = 25° => u_k[0, :] = 25
+  - CB borde inferior = Gradiente 0 => _k[:, 0] = u_k[:,1] - 0*dx
+  - CB borde derecho = 25° => u_k[-1,:] = 25
+<br>
+Se puede notar que las condiciones de borde cambian si existe un gradiente definido, debido a que se le considera el gradiente (ya sea en x o en y) con respecto al punto siguiente del que se esta evaluando.
+<br>
+
 - Gif.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/caso5.gif)
+<br>
+
 - Gráfico evolución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Grafico_Evolucion_caso5.png)
+ <br>
 - Imagenes distribución de temperaturas.
+
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0000.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0004.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0012.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0024.png)
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/Imagenes%20Fijas/frame_0048.png)
+ <br>
 - Gif distribución de temperaturas.
 
+  ![alt text](https://github.com/vjguzman/P3_E5_MCIOC/blob/main/caso5/distribucion_temperatura_caso5.gif)
+ <br>
 #### Caso 6
 - Parámetros
 - Gif.
