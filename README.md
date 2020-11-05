@@ -18,16 +18,51 @@ Explique ¿como cambia el código para el caso 3-D? ¿Como se imponen las condic
 -> para imagenes  ![alt text](link) 
 
 ## Caso 1
-- Parámetros
+- Parámetros y CB
+  - a = 1
+  - b = 1
+  - Nx = Ny = 30
+  - T° inicial = 20°
+  - CB borde superior = u_k[:, -1] = 0°
+  - CB borde izquierdo = u_k[0, :] = 20°
+  - CB borde inferior = u_k[:, 0] = 20°
+  - CB borde derecho = u_k[-1,:] = 0°
+  
+<br>
+
 - Gif.
+
+  ![caso1](https://user-images.githubusercontent.com/69158551/98290976-2d8b0c00-1f89-11eb-9995-9005f0f6a4db.gif)
+  
 - Gráfico evolución de temperaturas.
+
+  ![Grafico_Evolucion_caso1](https://user-images.githubusercontent.com/69158551/98291325-ba35ca00-1f89-11eb-8467-148ec2cca56c.png)
+
 - Imagenes distribución de temperaturas.
+
 - Gif distribución de temperaturas.
 - ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
 ## Caso 2
-- Parámetros
+- Parámetros y CB
+  - a = 1
+  - b = 1
+  - Nx = Ny = 30
+  - T° inicial = 20°
+  - CB borde superior = u_k[:, -1] = 0°
+  - CB borde izquierdo = u_k[0, :] = 20°
+  - CB borde inferior = u_k[:, 0] = 20°
+  - CB borde derecho = gradiente = u_k[-1,:] = u_k[-2,:] + 0*dx 
+  
+<br>
+ 
 - Gif.
+
+  ![caso2](https://user-images.githubusercontent.com/69158551/98291615-29abb980-1f8a-11eb-878d-e45b114b0b4b.gif)
+  
 - Gráfico evolución de temperaturas.
+
+  ![Grafico_Evolucion_caso2](https://user-images.githubusercontent.com/69158551/98291668-43e59780-1f8a-11eb-82ff-aec546967c2f.png)
+  
 - Imagenes distribución de temperaturas.
 - Gif distribución de temperaturas.
 - ¿Como cambia el código para el caso 3-D? ¿Como se imponen las condiciones de borde?
