@@ -30,6 +30,16 @@ Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profe
 
 - Imagenes distribución de temperaturas.
 
+  ![frame_0000](https://user-images.githubusercontent.com/69158551/98313078-d0578080-1fb1-11eb-943e-c253e5c65589.png)
+
+  ![frame_0004](https://user-images.githubusercontent.com/69158551/98313222-21677480-1fb2-11eb-8364-e2f3ccfddd97.png)
+
+  ![frame_0012](https://user-images.githubusercontent.com/69158551/98313265-37753500-1fb2-11eb-81dd-2d908c750413.png)
+
+  ![frame_0024](https://user-images.githubusercontent.com/69158551/98313203-16acdf80-1fb2-11eb-836e-33cba72b6d7e.png)
+
+  ![frame_0048](https://user-images.githubusercontent.com/69158551/98313276-3cd27f80-1fb2-11eb-9c20-0da43cdfb7cd.png)
+
 - Gif distribución de temperaturas.
 
 ## Caso 2
@@ -54,6 +64,16 @@ Cabe destacar que el dia de hoy, Jueves 05/11, tuvimos una reunión con el profe
   ![Grafico_Evolucion_caso2](https://user-images.githubusercontent.com/69158551/98291668-43e59780-1f8a-11eb-82ff-aec546967c2f.png)
   
 - Imagenes distribución de temperaturas.
+  ![frame_0000](https://user-images.githubusercontent.com/69158551/98313390-773c1c80-1fb2-11eb-8c52-8424daec0eb1.png)
+
+  ![frame_0004](https://user-images.githubusercontent.com/69158551/98313391-77d4b300-1fb2-11eb-95c3-eb5c74059c9c.png)
+
+  ![frame_0012](https://user-images.githubusercontent.com/69158551/98313392-77d4b300-1fb2-11eb-9e7e-56d379b662fd.png)
+
+  ![frame_0024](https://user-images.githubusercontent.com/69158551/98313394-799e7680-1fb2-11eb-80ed-cbe360537646.png)
+
+  ![frame_0048](https://user-images.githubusercontent.com/69158551/98313387-760aef80-1fb2-11eb-8f42-1101fd11fa1b.png)
+  
 - Gif distribución de temperaturas.
 
 ## Caso 3
